@@ -1,0 +1,18 @@
+<div style="margin-top: 6%;">
+<h1 style="margin-left: 40%;">ürün ekle</h1>
+<form action="/urun" method="POST" enctype="application/json" class="pst">
+    <div class="form-group ">
+         <label class="labe" style="width: 180px; background-color:rgb(238, 180, 159); border-radius:20px;" for="">Ürün Adı</label><br>
+         <input type="text" name="baslik"  placeholder="ürün adını giriniz..">
+</div>
+      <div class="form-group ">
+         <label class="labe" style="width: 180px; background-color:rgb(238, 180, 159); border-radius:20px" for="">Ürün İçeriği</label><br>
+         <input type="text" name="icerik" placeholder="içeriği giriniz..">
+      </div>
+           <div class="form-group">
+            <label class="labe" style="width: 180px; background-color:rgb(238, 180, 159); border-radius:20px" for="">Ürün Görseli</label><br>
+            <input type="file" name="resim" accept="image/*">
+        </div>
+         <button type="submit" id="sendProductButton" class="btn btn-primary label"  onclick="pathİndexx();">Kaydet</button>
+    </form>
+</div>

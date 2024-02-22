@@ -1,0 +1,21 @@
+
+<div class="sekil">
+<h1  style="margin-left: 100px; color:rgb(238, 180, 159)" >kaydol</h1>
+  <form action="/register" method="post" enctype="application/json" >
+  {{!-- coook önemli verilen okunailmesi için expree json özelliği kullanılmalı ve form enctype a da eklenmeli --}}
+        <div class="form-group">
+             <label class="labe" style="width: 180px; background-color:rgb(238, 180, 159); border-radius:20px" for="">Kullanıcı Adınız</label><br>
+            <input type="text" name="username" placeholder="Kullanıcı adı giriniz">
+        </div>
+        <div class="form-group">
+             <label class="labe" style="width: 180px; background-color:rgb(238, 180, 159); border-radius:20px" for="">Email</label><br>
+            <input type="email" name="email" placeholder="E-posta giriniz">
+        </div>
+        <div class="form-group">
+             <label class="labe" style="width: 180px; background-color:rgb(238, 180, 159); border-radius:20px" for="">Şifreniz</label><br>
+            <input type="password" name="password" placeholder="Şifre giriniz">
+        </div>
+        <button  style="height: 40px; justify-content:center"  id="sendRegisterButton" type="submit" class="btn btn-primary label"><p>Kaydol</p></button>
+    </form>
+<br><br><br><br>
+</div>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script src="first.js"></script>
+<link rel="stylesheet" href="stylee.css">
+<link rel="stylesheet" href="stylelog.css">
+<link rel="stylesheet" href="filtre.css">
+<title>hesabım</title>
+</head>
+<style>
+  .pst{
+    margin-left: 40%;
+  }
+  .feather-plus{
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 3px 3px 3px 3px;
+background-color: beige;
+left: 120px;
+align-self: center;
+  }
+    body{
+        background-color: antiquewhite;
+    }
+    li{
+        list-style: none;
+        margin-left: 20px;
+    }
+    .bi-suit-heart{
+      display: flex;
+      position: absolute;
+      margin-top:0;
+      top: 12px;
+      color: antiquewhite;
+      background-color: black;
+      
+    }
+   .favoriite{
+    display: flex;
+    position: absolute;
+    margin-left: 300px;
+}
+.products:hover{
+scale: 1.1;
+cursor: pointer;
+}
+.bi:hover{
+  scale: 1.1;
+  cursor: pointer;
+}
+  
+</style>
+<body> 
+ <div class="baslik" style="display:flex; position: relative;">
+         {{!-- <div class="filtree"><li class="filtree" style="background-color: black;"> <p class="filt" onclick="pathFiltre();">filtrele <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+  </svg>  </i></p></li></div> --}}
+            <li id="hes" class="liler"><a> 
+      <div style="margin-left: 0px;">hesabım      
+ <ul style="margin-left: 0px;" id="hesab" class="dropdown"><li class="hesap" onclick="pathlogin();">giriş yap</li>
+ <li class="hesap" onclick="pathregister();">kaydol</li>
+ <li class="hesap" href="site2/delete" onclick="pathdelete();">hesap sil</li></ul> </div> 
+<li onclick="pathindexx();" style="color: antiquewhite; background-color:black"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+      <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+    </svg></li>
+
+ </a> 
+</li>   
+ <div  onclick="pathUrun();" style="width: 50px; height:40px; background-color:black;margin-left:150px; "><li class="products" style="color: antiquewhite; margin-left:150px; margin-top:10px">ürünlerim</li></div>
+        {{!-- <li class="liler" style="background-color: brown; z-index:3333;"><a onclick="pathFav();"><i class="fa-regular fa-heart"></i></a>
+        </li> --}}
+        
+          <div class="filtree" style="background-color:black; display:flex; position:absolute; margin-top:0px "><li class="filtree" style="background-color: black;display:flex; position:absolute margin-right:10px; margin-top:0px"></i> <p class="filt" onclick="pathFiltreÜye();">filtrele <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg>  </i></p> </li></div>
+         {{!-- <li id="hes" class="liler"><a>Hesabım
+<ul id="hesab" class="dropdown"><li class="hesap" onclick="pathLogin();">giriş yap</li>
+<li class="hesap" onclick="pathRegister();">kaydol</li></ul> --}}
+
+        </a></li>
+         <!-- <li class="liler"> <a href="">Hazır Menü </i></a></li> --> 
+         <div class="favoriite" style="width: 50px; height:50px;">
+        <li class="favorite" style="background-color: aliceblue; display:flex; position:absolute;" class="liler" ><a onclick="pathFav();"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
+  <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+</svg></a></li></div>
+        {{!-- </li><div id="clock"></div> --}}
+</div>

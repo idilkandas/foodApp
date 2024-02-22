@@ -1,0 +1,37 @@
+body{
+    background-color: aquamarine;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.footerr{
+background-color: black;
+color: antiquewhite;
+align-self:center ;
+width: 100%;
+display: block;
+position: fixed;
+bottom: 0;
+
+
+}
+.footLi{
+
+    list-style: none;
+    display: flex;
+    text-align: center;
+height: 50px;
+width: 100%;
+align-items: center;
+}
+
+.footLi>li{
+margin-left: 15%;
+}
+.headerr{
+    background-color: black;
+color: antiquewhite;
+height:30px;
+}

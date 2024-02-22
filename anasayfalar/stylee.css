@@ -1,0 +1,783 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.genelMenu{
+    width: 1300px;
+    height: auto;
+    display: flex;
+    float: left;
+    justify-items: center;
+    position: relative;
+    /* background-color: black; */
+    
+    }
+    
+    .ozel1{
+        /* background-color:aqua; */
+        height: auto;
+    width: 1300px;
+    height: auto;
+    display: flex;
+    float: left;
+    position: relative;
+    float: left;
+    justify-items: center;
+    position: relative;
+    }
+    .ozel2{
+        height: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    float: left;
+    justify-items: center;
+    position: relative;
+    }
+    .ozel3{
+        height: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    float: left; 
+    justify-items: center;
+    position: relative;
+    /* margin-bottom: 10px; */
+    margin-left: 0px;
+    }
+    .tarifEkle{
+        /* color: red; */
+        display: flex;
+        width: 50px;
+    }
+    .tarifeGit{
+        color: white;
+    }
+    
+    .linkCss{
+        color: white;
+        text-decoration: none;
+    }
+    
+    
+    
+    /* //foodap cssleri */
+    
+    .fav{
+        background-color: black;
+        width: 100%;
+        height: 500px;
+    }
+     #boxx{
+        background-color: antiquewhite;
+    margin-left: 30px;
+    max-height: 230px;
+}
+#i-div{
+    
+ width: 100%;   
+}
+.card-title{
+    width: 100%;
+}
+    
+    .card-img{
+
+width: 100%;
+
+}
+
+.cart-img{
+   width: 100%;
+overflow:hidden;   
+}
+    .titlle{
+        margin-top: 0px;
+        background-color: black;
+    }
+    .d{
+        height: 35px;
+        margin-top: 20px;
+    }
+    
+.card::-webkit-scrollbar,.cart::-webkit-scrollbar {
+    opacity: 0;
+    display: none;
+} 
+    
+    .cardd::-webkit-scrollbar{
+        opacity: 0.3;
+    }
+    .card-img-top{
+        height: 100px;
+        width: 100%;
+    }
+    
+    /* //menu css */
+    .gunCard{
+        width: auto;
+        height: auto;
+        background-color: brown;
+    }
+    .gunlereEkle{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 60px;
+    }
+    /* menu css bitti */
+    
+    .baslik{
+        background-color: black;
+        width: 100%;
+        height: 50px;
+    }
+    
+    .foodbaslik{
+        background-color: black;
+        width: 100%;
+        height: 50px;
+        display: block;
+        font-family: 'Courier New', Courier, monospace;
+        font:bolder ;
+        cursor: pointer;
+        margin-top: 40px;
+    }
+    
+    .foodbaslik2{
+        background-color:black;
+        width: 100%;
+        height: 50px;
+        /* display: flex; */
+        float: left;
+        font-family: 'Courier New', Courier, monospace;
+        font:bolder ;
+        cursor: pointer;
+        display: block;
+    }
+    .foodbaslik2{
+        margin-top: 20px;
+    }
+    
+    
+    .genelMenu{
+        display: none;
+    }
+    .genelMenu2{
+    width: 1300px; 
+margin-bottom: 30px;
+    display: flex;
+    float: left;
+    justify-items: center;
+    position: relative;
+    display: none;
+    }
+    
+    .filtre{
+        height: 50px;
+    position: absolute;
+    right: 0px;
+    background-color: black;
+    }
+    
+    .filtree{
+        height: 50px;
+        position: absolute;
+        right: 30px;
+        background-color:black;
+        color: antiquewhite;
+    }
+    .tarifEkle{
+        display: flex;
+        float: left;
+        margin-left: 10px;
+        width:110px;
+        /* background-color: rgb(29, 27, 27); */
+        border-radius: 7px;
+        height: 40px;
+        /* color: black; */
+    }
+    
+    .btn{
+        width: 110px;
+        display: flex;
+        float: left;
+        
+    }
+    
+    textarea::placeholder{
+        color:black;
+        /* align-items: center; */
+        /* align-self: center;
+        margin-left: 150px; */
+    }
+    
+    textarea{
+        border: none;
+    }
+    
+    .liler{
+    list-style: none;
+    color: antiquewhite;
+    text-decoration:dotted;
+    width: 150px;
+    display: flex;
+    float: left;
+    margin-left: 10px;
+    right: 100px;
+    margin-top: 10px;
+    /* position: inherit; */
+    }
+    
+    li>a{
+    text-decoration: none;
+    color: antiquewhite;
+    }
+    .titlee{
+        background-color: black;
+        color: wheat;
+        width: 100%;
+    }
+    .card-img-top{
+        margin-top: 0%;
+        position: relative;}
+    .gorsel{
+        position: relative;}
+    .haftalikk{
+        /* background-color: black; */
+        opacity: 0.5;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        display: flex;
+        position: absolute;
+        margin-left: 260px;
+        margin-bottom: 900;
+        top: 0;
+    }
+    .haftalik{
+        /* background-color: aqua; */
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        display: flex;
+        position: absolute;
+        top: 0;
+        margin-left: 0px;
+        /* margin-bottom: 900; */
+    }
+    
+    
+    /* fav html css  baslangıç*/
+    
+    .favoriler{
+    width: 900px;
+    height: auto;
+    /* background-color: brown; */
+    }
+    .favCards{
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+    }
+    .favCard{
+        width: 300px;
+        height: 300px;
+        background-color: bisque;
+    }
+    .favimg{
+        width: 100px;
+        height: 100px;
+    }
+    
+    
+    .ekleCard{
+        width: 800px;
+        height: 800px;
+        background-color: azure;
+    }
+    .ekleUrunler{
+        width: 600px;
+        height: auto;
+    }
+    
+    .eklekutu{
+        background-color: pink;
+        width: 300px;
+        height: 300px;
+        display: flex;
+    }
+    .cart-item{
+    width: 300px;
+    height: 300px;
+    }
+    .row-img{
+        width: 300px;
+        height: 100px;
+    }
+    .rowing{
+        width: 300px;
+        height: 100px;
+    }
+    .ekleUrunler{
+    width: 600px;
+    height: 700px;
+    /* display: flex; */
+    background-color: black;
+    
+    }
+    .favoriler{
+        width: 1300px;
+        height: 900px;
+        display: block;
+    }
+    .containerFav{
+        /* background-color: beige; */
+        width: 1200px;
+        height: auto;
+        display: block;
+    }
+    .delete{
+        left:0px;
+        width: 140px;
+        /* background-color: brown; */
+    }
+    #urunekle{
+        /* background-color: pink; */
+        height: auto;
+        width: 1200px;
+        display:block;
+        
+    }
+    .cardd{
+        /* background-color: black; */
+        width: 320px;
+        height: 230px;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-left: 30px;
+        overflow-y: scroll;
+        display: flex;
+        float: left;
+    }
+    .newP{
+        display: flex;
+        float: left;
+    position: relative;
+    }
+    #img_box{
+        width: 350px;
+        /* height: 150px; */
+        /* background-color: red; */
+     border: 5px solid black;
+     border-radius: 5px 5px 5px 5px;
+    }
+    #p_img{
+        width: 300px;
+        /* height: 300px; */
+        /* background-color: aqua; */
+        border-radius: 10px;
+    }
+    .card-img-top{
+        height: 150px;
+/* width:500px; */
+width: 100%;
+    }
+.text{
+    margin-left: 10px;
+}
+   
+   
+    .titl{
+    background-color: black;
+    width: 100%;
+    color: antiquewhite;
+    text-align: center;
+    }
+    .cardd{
+        background-color: beige;
+        /* width: 900px; */
+        width: 350px;
+    }
+    #img_box{
+        /* margin-left: 10px; */
+        width: 320px;
+        border-radius: 10px;
+        margin-top: 30px;
+        background-color: green;
+    }
+    .cardd-body{
+        width: 350px;
+        background-color: beige;
+    border-radius: 10px;
+    align-items: center;
+    margin-left:10px ;
+    }
+    
+    .ekle{
+        display: flex;
+        margin-left: 30px;
+    }
+    .delete{
+        color: wheat;
+        font-style: normal;
+        text-decoration: none;
+         margin-left: 90px; 
+    }
+    .product{
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        float: left;
+        width: 100%;
+        /* background-color: black; */
+        margin-top: 30px;
+        position: relative;
+    }
+    
+    .addC{
+    margin-top: 30px;
+    display: flex;
+    border: 1px solid rgb(225, 215, 215);
+    border-radius:1px 1px 1px 1px;
+
+    position: relative;
+        height: 190px;
+        width: 290px;
+        background-color: beige;
+        resize: none;
+    }
+    .favdaGit{
+        margin-left: 13px;
+    }
+    
+    
+
+.cart{
+    background-color: antiquewhite;
+    margin-left: 20px;
+    border: 1px solid antiquewhite;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 10px;
+}
+.cart:hover , .card:hover{
+scale: 1.1;
+}
+ .cart , .card{
+    /* width: 600px; */
+    max-height: 210px;
+    overflow-y: scroll;
+    margin-top: 20px;
+    width: 700px;
+    
+}
+    .menu{
+        /* background-color: black; */
+        width: 1348px;
+        height:1348px;
+    }
+  
+.titliee{
+        width: 100%;
+        background-color: black;
+        text-align: center;
+        color: antiquewhite;
+        border-radius: 10px;}
+.titlee{
+         background-color: black;
+        text-align: center;
+        color: antiquewhite;
+        padding-left: 0%;
+        }
+        .card-body{
+            padding: 0%;
+        }
+    .button{
+        margin-left: 55px;
+    }
+    .card-text-filter{
+        margin-left: 10px;
+    }
+   
+    .card-img-top{
+        margin-bottom: 0px;
+    }
+    svg{
+        background-color:black;
+        display: flex;
+        position: absolute;
+    }
+    .bi{
+        margin-top: 5px;
+        margin-left: 3px;
+background-color: black;
+color: antiquewhite;
+display: inline-block;
+    }
+    .fa-solid {
+        display: flex;
+        /* color: blueviolet; */
+        position: absolute;
+        /* margin-left: 100px; */
+        float: left;
+    }
+    .filtree{
+        opacity: 1;
+        list-style: none;
+        /* background-color: aqua; */
+    }
+    .fa-regular{
+        /* background-color: bisque; */
+        width: 20px;
+        height: 50px;
+        color: antiquewhite;
+    }
+    .foodbaslik{
+        font-weight: bolder;
+    }
+    .foodbaslik2{
+        font-weight: bolder;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .foodbaslik3{
+        background-color:black;
+        width: 100%;
+        height: 50px;
+        color: aliceblue;
+        float: left;
+        font-family: 'Courier New', Courier, monospace;
+        font:bolder ;
+        cursor: pointer;
+        display: block;
+    }
+    .baslikP{
+        color: antiquewhite;
+        font-weight: bolder;
+    }
+    .genelMenu3{
+        display:  none;
+        margin-bottom: 30px;
+    }
+    .addFav{
+        text-align: center;
+        background-color: black;
+        height: 100px;
+        width: 1360px;
+        color: antiquewhite;
+    }
+    .ready{
+        width: 1100px;
+        height: 650px;
+        background-color: aqua;
+        align-items: center;
+        align-content: center;
+        align-items: center;
+        display: flex;
+    margin-left: 100px;
+    position: relative;
+    
+    }
+    .cooking{
+        width: 1100px;
+        height: 650px;
+        background-color: beige;
+    }
+    .urunbaslik{
+        display: flex;
+        align-items: center;
+        text-align: center;
+     /* margin-left: 300px; */
+        background-color:black;
+    
+    }  
+    
+    .baslikUrun{
+        display: flex;
+        align-self: center;
+        color: antiquewhite;
+        text-align: center;
+        margin-left: 500px;
+    }
+    .icerik{
+        /* background-color: aqua; */
+        width: 275px;
+        height: auto;
+    }
+    .icerikP{
+        font-weight: bolder;
+        margin-left: 30px;
+    }
+    .yap{
+        width: 600px;
+        height: auto;
+        /* background-color: aquamarine; */
+        display: inline-block;
+        position: absolute;
+        margin-left: 130px;
+        /* margin-top:100px ; */
+    }
+    .karma{
+        /* background-color: black; */
+        width: 300px;
+        display: inline-block;
+    }
+    .slider{
+        width: 400px;
+        height: 300px;
+    }
+    .carousel-item{
+        width: 250px;
+        height: 250px;
+    }
+    .knowThis{
+        background-color:beige;
+        margin-top: 100px;
+    }
+/*    
+    .hesap{
+        /* display: flex; */
+      
+        /* float: left; */
+    /* } */ 
+    .form{
+        width: 450px;
+        margin-left: 150px;
+    }
+    .basl{
+        margin-left: 150px;
+    }
+
+
+#hesab{
+    list-style: none;
+    /* background-color: brown; */
+    /* display: inline-block; */
+    position:absolute;
+    color: black;
+    left: 0;
+    padding-left: 0;
+    margin-top: 3px;
+    z-index: 99;
+    width: 100px;
+    
+    /* background-color: rgb(12, 13, 13); */
+
+}
+.hesap>text{
+    text-align: center;
+    margin-top: 1px;
+}
+.hesap{
+border-style: groove;
+    border-color:black;
+    border-radius: 1px;
+    display: block;
+    position: relative;
+    color: antiquewhite;
+margin-top: 13px;
+text-align: center;
+display: none; 
+background-color:black;
+display: flex;
+opacity: 0.8;
+margin-left: 0px;
+padding-top: 0;
+text-align: center;
+}
+.hesap:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+
+.filtree{
+    background-color: beige;
+}
+.filt{
+    background-color:black;
+}
+
+
+#clock {
+display: inline-block;
+position: absolute;
+    /* background-color: aqua; */
+    height: 10px;
+    width: 200px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0;
+    color: antiquewhite;
+    right: 200px;
+}
+
+.slidee{
+    position: relative;
+    /* margin-left: 30%; */
+    width: 100%;
+    display: flex;
+    float: left;
+    margin-left: 20%;
+}
+.d-block{
+    width: 33%;
+    height: 300px;
+}
+.sekil{
+    border-radius: 20px;
+    border: 20px solid rgb(238, 180, 159);
+    background-color: antiquewhite;
+    height: auto;
+    width: 520px;
+    margin-left: 25%;
+    margin-top: 50px;
+}
+.sekil>form{
+    margin-left: 100px;
+}
+.labe{
+    text-align: center;
+}
+.label{
+    background-color: rgb(238, 180, 159);
+    border-color: rgb(250, 180, 155);
+}
+
+#iC{
+    background-color: black;
+    margin-left: 27px;
+    opacity: 0.7;
+border: none;
+height: 40px;
+margin-bottom: 100px;
+
+}
+#iC:hover{
+opacity: 1;
+}
+.banner{
+    width: 300px;
+    height: 300px;
+    background-color: antiquewhite;
+    top: 0;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

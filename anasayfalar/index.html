@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="stylee.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Document</title>
+   <script src="jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+   
+   <style>
+    body{
+      height: auto;
+      background-color: antiquewhite;
+    }
+    .add{
+      height: 100px;
+      width: 100px;
+      margin-left: 30%;
+      margin-top: 30%; 
+      position: relative;
+      /* background-color: rgb(250, 180, 155); */
+      border: 10px solid rgb(250, 180, 155);
+    }
+    .feather{
+      background-color:white;
+      display: flex;
+     position: absolute;
+     margin-top:30% ;
+     margin-left: 20%;
+    }
+    .card{
+      margin-left: 30px;
+    }
+   </style>
+</head>
+<body>
+  <div class="baslik">
+        <div class="filtree"><li class="filtree" style="background-color:black"> <p class="filt" onclick="pathFiltre();">filtrele <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+  </svg>  </i></p></li></div>
+        <li id="hes" class="liler"><a>HESABIM
+<ul id="hesab" class="dropdown">
+  <div class="menuu">
+  <div class="me">
+  <li class="hesap" onclick="pathLogin();">giriş yap</li>
+<li class="hesap" onclick="pathRegister();">kaydol</li></ul>
+</div></div>
+        </a></li> </div>
+        <!-- <li class="liler"> <a onclick="pathİndex();">Anasayfa</i></a></li> -->
+        <li class="liler"><a onclick="favAlert();"><i class="fa-regular fa-heart"></i></a>
+        </li>
+        </div>
+<div class="menu">
+                   <btn class="foodbaslik"> <h1  class="baslikP">Makarnalar</h1> </btn>
+                   
+                 <div class="genelMenu" >
+    <div class="ozel1">
+          
+        <div class="cart"  style="width:24rem;">
+            <div class="img-div" style="overflow:hidden;"  id="img_box_1"><img src="img/pesto.jpg" class="card-img-top" alt=""></div>
+            <div class="card-body main-body" >
+            <div class='titl' id="p-name-1">  <h5 class="card_title1"> Pesto Soslu Makarna</h5></div>
+              <p class="card-text text" id="p-content-1">1/2paketyassı spaghetti.
+                3/4su bardağıpesto <br>
+                2yemek kaşığızeytinyağı<br>
+                1/2su bardağıkrema(100 ml) <br>
+                1çay kaşığıtuz. <br>
+                1/2çay kaşığıkarabiber.</p>
+              <button class="btn btn-primary tarifeGit" id="iC" onclick="urun1Git();" > <a class='linkCss' href="/ürün1.html">tarife git</a></button>
+              <button name="1" class='btn btn-primary tarifEkle' id="iC" onclick="alertFunction();"> <a >favori</a> </button>    
+            </div>
+          </div>
+<div class="cart"  style="width: 24rem;">
+    <div class="img-div" id="img_box_2"><img src="img/soyamak.jpg" class="card-img-top" alt=""></div>
+    <div class="card-body">
+    <div class='titl' id="p-name-2">  <h5 class="card_title2">Soya Soslu Makarna</h5></div>
+      <p class="card-text text" id="p-content-2"> Yarım paket makarna.
+        2 orta boy domates. <br>
+        1 orta boy soğan. <br>
+        2 yemek kaşığı sıvı yağ <br>
+        2 yemek kaşığı soya sosu. <br>
+        1 yemek kaşığı domates salçası <br>
+        4-5 dal maydanoz. <br>
+        Tuz, karabiber.   </p>
+        <button class="btn btn-primary tarifeGit" id="iC"> <a class='linkCss' href="ürün2.html">tarife git</a></button>
+        <button name="2"  class='btn btn-primary kayit tarifEkle' id="iC" onclick="alertFunction();"> <a >favori</a> </button>    
+        </div>
+    </div>
+<div class="cart"  style="width: 24rem;">
+    <div class="img-div" id="img_box_3"><img  src="img/beşamelmak.jpg" class="card-img-top" alt=""></div>
+    <div class="card-body">
+    <div class='titl' id="p-name-3">  <h5 class="card_title3">Beşamel Soslu Makarna</h5></div>
+      <p class="card-text text" id="p-content-3"> Yarım paket makarna. <br>
+        Tereyağ. <br>
+        Un. <br>
+        1 orta boy soğan. <br>
+        2 yemek kaşığı sıvı yağ <br>
+        2 yemek kaşığı soya sosu. <br>
+        1 yemek kaşığı domates salçası <br>
+        4-5 dal maydanoz. <br>
+        Tuz, karabiber.   </p>
+        <button class="btn btn-primary tarifeGit" id="iC" onclick="ürün3Git();"> <a class='linkCss' href="ürün3.html">tarife git</a></button>
+        <button name="3"  class='btn btn-primary kayit tarifEkle' id="iC" onclick="alertFunction();"> <a >favori</a> </button>    
+      </div>
+    </div>
+<div class="cart"  style="width: 24rem;">
+    <div id="img_box_4" class="img-div"><img  src="img/tavuklumak.jpg" class="card-img-top" alt=""></div>
+    <div class="card-body">
+    <div class='titl' id="p-name-4">  <h5 class="card_title4">Soya Soslu Makarna</h5></div>
+      <p class="card-text text" id="p-content-4"> Yarım paket makarna. <br>
+        Tavuk. <br>
+        1 orta boy soğan. <br>
+        2 yemek kaşığı sıvı yağ <br>
+        2 yemek kaşığı soya sosu. <br>
+        1 yemek kaşığı domates salçası  <br>
+        4-5 dal maydanoz. <br>
+        Tuz, karabiber.   </p>
+      <button class="btn btn-primary tarifeGit" id="iC" onclick="ürün4Git();"> <a class='linkCss' href="ürün4.html">tarife git</a></button>
+      <button name="4" id="iC" class='btn btn-primary kayit tarifEkle' onclick="alertFunction();"> <a >favori</a> </button>    
+    </div></div></div></div>
+          
+    <btn class="foodbaslik2"><h1 class="baslikP">Tatlılar</h1> </btn>
+                <div class="genelMenu2">
+                    <div class="ozel2">
+
+<div class="cart" style="width: 24rem;">
+  <div id="img_box_5" class="img-div"> <img  src="img/tatlı1.jpg" class="card-img-top" alt=""></div>
+  <div class="card-body">
+  <div class='titl' id="p-name-100">  <h5 class="card_title100"> San Sebastian</h5></div>
+    <p class="card-text text" id="p-content-5">1/2paketyassı spaghetti. <br>
+      3/4su bardağıpesto sos. <br>
+      2yemek kaşığızeytinyağı <br>
+      1/2su bardağıkrema(100 ml) <br>
+      1çay kaşığıtuz. <br>
+      şeker</p>
+    <button class="btn btn-primary tarifeGit" id="iC" onclick="ürün4Git();"> <a class='linkCss' href="ürün4.html">tarife git</a></button>
+    <button name="5"  class='btn btn-primary kayit tarifEkle' id="iC" onclick="alertFunction();"> <a >favori</a> </button>    
+  </div>
+</div>
+
+
+
+
+
+<div class="cart" style="width: 24rem;">
+<div id="img_box_6" class="img-div"><img  src="img/tatlı2.jpg" class="card-img-top" alt=""></div>
+<div class="card-body">
+<div class='titl' id="p-name-6">  <h5 class="card_title6">Yaş Pasta</h5></div>
+<p class="card-text text" id="p-content-101"> Yarım paket makarna. <br>
+İstenilen meyve <br>
+1 orta boy soğan. <br>
+2 yemek kaşığı sıvı yağ <br>
+2 yemek kaşığı soya sosu. <br>
+1 yemek kaşığı domates salçası <br>
+4-5 dal maydanoz. <br>
+Tuz, karabiber.   </p>
+<button class="btn btn-primary tarifeGit" id="iC"> <a class='linkCss' href=${link}>tarife git</a></button>
+
+<button name="6"  id="iC" class='btn btn-primary kayit tarifEkle' onclick="alertFunction();"> <a >favori</a> </button>    
+</div>
+</div>
+
+
+<div class="cart" style="width: 24rem;">
+  <div id="img_box_7" class="img-div"><img  src="img/tatlı3.jpg" class="card-img-top" alt=""></div>
+  <div class="card-body">
+  <div class='titl' id="p-name-7">  <h5 class="card_title7">Mangnolia</h5></div>
+  <p class="card-text text" id="p-content-7"> Yarım paket makarna. <br>
+  2 orta boy domates. <br>
+  1 orta boy soğan. <br>
+  2 yemek kaşığı sıvı yağ <br>
+  2 yemek kaşığı soya sosu. <br>
+  1 yemek kaşığı domates salçası <br>
+  4-5 dal maydanoz. <br>
+  Tuz, karabiber.   </p>
+  <button class="btn btn-primary tarifeGit" id="iC"> <a class='linkCss' href=${link}>tarife git</a></button>
+  
+  <button name="7"  class='btn btn-primary kayit tarifEkle' id="iC" onclick="alertFunction();"> <a >favori</a> </button>    
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="cart" style="width: 24rem;">
+    <div id="img_box_8" class="img-div"><img  src="img/tatlı4.jpg" class="card-img-top" alt=""></div>
+    <div class="card-body" >
+    <div class='titl' id="p-name-8">  <h5 class="card_title8">Cream Burlee</h5></div>
+    <p class="card-text text" id="p-content-8"> Yarım paket makarna. <br>
+    Krem şanti <br>
+    1 orta boy soğan. <br>
+    2 yemek kaşığı sıvı yağ <br>
+        2 yemek kaşığı soya sosu. <br>
+             1 yemek kaşığı domates salçası <br>
+    4-5 dal maydanoz. <br>
+    Tuz, karabiber.   </p>
+    <button id="iC" class="btn btn-primary tarifeGit"> <a class='linkCss' href=${link}>tarife git</a></button>
+    
+    <button name="8"   class='btn btn-primary kayit tarifEkle' id="iC" onclick="alertFunction();"> <a >favori</a> </button>    
+    </div>
+    </div>
+
+
+
+    </div></div>
+
+
+
+       
+<div class="foodbaslik3"> <h1 class="baslikP">Ana Yemekler</h1></div>
+<div class="genelMenu3">
+  <div class="ozel3">
+
+
+    <div class="cart" style="width: 24rem;">
+      <div id="img_box_9" class="img-div"><img  src="img/anayemek1.jpg" class="card-img-top" alt=""></div>
+      <div class="card-body" >
+      <div class='titl' id="p-name-9">  <h5 class="card_title9">Mantar Sote</h5></div>
+      <p class="card-text text" id="p-content-9">
+         
+       2 paket mantar (1 kg) <br> 
+       2 adet kuru soğan. <br>
+       4-5 adet çarliston biber. <br>
+       1 diş sarımsak. <br>
+         2 adet domates.  <br>
+                   1 yemek kaşığı tereyağı <br>
+            Yarım çay bardağı kadar sıvı yağ  <br>
+              Tuz, karabiber ve pul biber. 
+       </p>
+      <button id="iC" class="btn btn-primary tarifeGit"> <a class='linkCss' href=${link}>tarife git</a></button>
+      
+      <button id="iC" name="9"  class='btn btn-primary kayit tarifEkle' onclick="alertFunction();"> <a >favori</a> </button>    
+      </div>
+      </div>
+  
+
+
+
+
+
+
+      
+  <div class="cart" style="width: 24rem;">
+    <div id="img_box_10" class="img-div"><img  src="img/anayemek2.jpg" class="card-img-top" alt=""></div>
+    <div class="card-body" >
+    <div class='titl' id="p-name-10">  <h5 class="card_title10">Kremalı Somon</h5></div>
+    <p class="card-text text" id="p-content-10">1 kilo dilimlenmiş somon <br>
+      Zeytinyağ <br>
+      2 yemek kaşığı tereyağı <br>
+      1 yemek kaşığı un <br>
+      1 paket krema <br>
+      3 diş sarımsak <br>
+      Dereotu <br>
+      Az karabiber
+  
+    </p>
+    <button class="btn btn-primary tarifeGit" id="iC"> <a class='linkCss' href=${link}>tarife git</a></button>
+    
+    <button id="iC" name="10"  class='btn btn-primary kayit tarifEkle' onclick="alertFunction();"> <a >favori</a> </button>    
+    </div>
+    </div>
+
+
+
+
+    
+  <div class="cart" style="width: 24rem;">
+    <div id="img_box_11" class="img-div"><img  src="img/anayemek3.jpg" class="card-img-top" alt=""></div>
+    <div class="card-body" >
+    <div class='titl' id="p-name-11">  <h5 class="card_title11">Latke</h5></div>
+    <p class="card-text text" id="p-content-11"> 
+      3 adet patates(orta boy) (700-800 g) <br>
+      1 adet yumurta. <br>
+      5 yemek kaşığı (silme)mısır nişastası <br>
+      1çay bardağıayçiçek yağı(kızartmak için) 
+    </p>
+    <button id="iC" class="btn btn-primary tarifeGit"> <a class='linkCss' href=${link}>tarife git</a></button>
+    
+    <button id="iC" name="11"  class='btn btn-primary kayit tarifEkle' onclick="alertFunction();"> <a >favori</a> </button>    
+    </div>
+    </div>
+
+
+
+
+    
+  <div class="cart" style="width: 24rem;">
+    <div id="img_box_12" class="img-div"><img  src="img/anayemek4.jpg" class="card-img-top" alt=""></div>
+    <div class="card-body" >
+    <div class='titl' id="p-name-12">  <h5 class="card_title12">Taco</h5></div>
+    <p class="card-text text" id="p-content-12"> 
+      
+      8 taco kabuğu veya küçük yuvarlak lavaş <br>
+      1 su bardağı Meksika fasulyesi. <br>
+      1/2 (yarım) su bardağı mısır tanesi. <br>
+      300 gr kıyma. <br>
+      2-3 yemek zeytinyağı <br>
+      1 domates. <br>
+      4 yaprak kıvırcık. <br>
+       1/2 (yarım) kırmızı soğan.
+    </p>
+    <button id="iC" class="btn btn-primary tarifeGit"> <a class='linkCss' href=${link}>tarife git</a></button>
+    
+    <button id="iC" name="12" class='btn btn-primary kayit tarifEkle' onclick="alertFunction();"> <a >favori</a> </button>    
+    </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+  
+    </div>
+  
+
+<!-- <div class="banner" style="background-color: antiquewhite;"><img class="banner" style="background-color: antiquewhite;" src="img/bannerson.png" alt=""></div> -->
+
+<script src="first.js"></script>
+<script src="main.js"></script>    
+<!-- <script src="app.js">  -->
+     </body>
+</html> 

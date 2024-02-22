@@ -1,0 +1,20 @@
+    <div class="product">
+      
+        <div onclick="pathPost();" class="addC" style="margin-left: 20px; height:177px; margin-top:20px; border-radius:5px 5px 5px 5px; background-color:white;" > 
+ <div class="btn add"  onclick="pathPost();"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+</div> 
+</div> 
+        {{#each posts}}
+        <div class="card "  style="width: 18rem; display:inline-block; margin-left:30px; max-height:177px ">
+            <div class="img-div " id="i-div" ><img  class="card-img-top card-img"  style="width:100%" src="img/{{resim}}"  class="card-img-top" alt=""></div>
+            <div class="card-body" style="width:100%;  padding:0%">
+            <div class='titl'  style="margin-top: 0px; width: 100%;">  <h5 class="card-title" style="width: 100%;"> {{baslik}}</h5></div>
+              <p class="text" id="p-content-1">{{icerik}}
+<form action="/urun/{{_id}}" method="POST" class="delete-form">
+              <button type="submit" name="1" class='btn btn-primary d delete' style="margin-left:20%; background-color:black; border:0cap" onclick=""> <a ><p style="margin-left: 50px;">Sil</p></a> </button>    
+          </form> 
+          </div>
+          </div>
+          {{/each}}
+</div>
+    </div>

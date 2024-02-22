@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="filtre.css">
+    <title>filtre page</title> 
+    <script src="jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+ <style>
+ .anasayfa{
+    background-color: antiquewhite;
+    width: 80px;
+    height: 50px;
+ }
+  .genelMenuFiltre{
+    width: 1295px;
+    
+    align-items: center;
+    margin-left: 50px;
+  }
+    </style>
+</head>
+<body>
+    <div class="baslikFiltre">
+    <div class="filter">
+        
+
+<li onclick="pathexx();" style="color: antiquewhite; background-color:black; list-style: none;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+  </svg></li>
+        <li class="liler"><a onclick="pathFav();"><i class="fa-regular fa-heart"></i></a></li>
+        </div>
+    </div>
+
+
+
+<div class="filtree" style="margin-left:39%;"> <textarea class="filtre" placeholder="filtrele.."></textarea></div>
+
+
+
+
+    <div class="menu">
+    <div class="genelMenuFiltre">
+<div class="cardFiltre"  style="width: 22rem;">
+<div class="imagee" id="img_box_1"><img  src="img/pesto.jpg" class="card-img-top" alt="makarna"></div>
+<div class="card-body-filtre" >
+<div class='titlee' id="p-name-1">  <h5 class="card_title1"> Pesto Soslu Makarna</h5></div>
+   <p class="card-text-filter" id="p-content-1">1/2paketyassı spaghetti. <br>
+     3/4su bardağı pesto <br>
+     2yemek kaşığı zeytin yağı<br>
+     1/2su bardağıkrema(100 ml) <br>
+     1çay kaşığı tuz. <br>
+     1/2çay kaşığı karabiber. <br>
+Makarnanın yapılışı için video izleyebilirsiniz   </p>
+
+    </p>
+   <button class="btn btn-primary tarifeGit" href="ürün1.html" onclick="urun1Git();"> <a class='linkCss' href="/ürün1.html">tarife git</a></button>
+   <button name="1" class='btn btn-primary tarifEkle' onclick=""> <a >favori</a> </button>    
+ </div>
+</div>
+<div class="cardFiltre"  style="width: 22rem;">
+<div id="img_box_2"><img  src="img/soyamak.jpg" class="card-img-top" alt="makarna"></div>
+<div  class="card-body-filtre" >
+<div class='titlee' id="p-name-2">  <h5 class="card_title2">Soya Soslu Makarna</h5></div>
+<p class="card-text-filter" id="p-content-2"> Yarım paket makarna. <br>
+2 orta boy domates. <br>
+1 orta boy soğan. <br>
+2 yemek kaşığı sıvı yağ <br>
+2 yemek kaşığı soya sosu. <br>
+1 yemek kaşığı domates salçası <br>
+4-5 dal maydanoz. <br>
+Tuz, karabiber.   <br>
+Makarnanın yapılışı için video izleyebilirsiniz
+ </p>
+<button class="btn btn-primary tarifeGit" href="ürün2.html" onclick="urun2Git();"> <a class='linkCss' href='/ürün2.html'>tarife git</a></button>
+<button name="2" class='btn btn-primary tarifEkle' onclick=""> <a >favori</a> </button>    
+</div>
+</div>
+<div class="cardFiltre"  style="width: 22rem;">
+<div id="img_box_3"><img  src="img/beşamelmak.jpg" class="card-img-top" alt="makarna"></div>
+<div class="card-body-filtre">
+<div class='titlee' id="p-name-3">  <h5 class="card_title3">Beşamel Soslu Makarna</h5></div>
+<p class="card-text-filter" id="p-content-3"> Yarım paket makarna. <br>
+Tereyağ. <br>
+Un. <br>
+1 su bardağı süt <br>
+1 orta boy soğan. <br>
+2 yemek kaşığı tere yağ <br>
+2 yemek kaşığı beşamel sosu. <br>
+1 yemek kaşığı un <br>
+4-5 dal maydanoz. <br>
+Tuz, karabiber. <br>
+Makarnanın yapılışı için video izleyebilirsiniz   </p>
+
+  </p>
+<button class="btn btn-primary tarifeGit" href="ürün3.html"> <a class='linkCss' href='/ürün3.html'>tarife git</a></button>
+<button name="3" class='btn btn-primary tarifEkle' onclick=""> <a >favori</a> </button>    
+</div>
+</div>
+<div class="cardFiltre" style="width: 22rem;">
+<div id="img_box_4"><img  src="img/tavuklumak.jpg" class="card-img-top" alt="makarna"></div>
+<div class="card-body-filtre">
+<div class='titlee' id="p-name-4">  <h5 class="card_title4">Bolonez Soslu Makarna</h5></div>
+<p class="card-text-filter" id="p-content-4"> Yarım paket makarna. <br>
+kıyma. <br>
+1 orta boy soğan. <br>
+2 yemek kaşığı sıvı yağ <br>
+2 yemek kaşığı domates sosu. <br>
+1 yemek kaşığı domates salçası  <br>
+4-5 dal maydanoz. <br>
+Tuz, karabiber, kimyon , nane  <br>
+Makarnanın yapılışı için video izleyebilirsiniz   </p>
+<button class="btn btn-primary tarifeGit" href="ürün4.html"> <a class='linkCss' href='/ürün4.html'>tarife git</a></button>
+<button name="4" class='btn btn-primary tarifEkle' onclick=""> <a >favori</a> </button>    
+</div></div>
+<div class="cardFiltre" style="width: 22rem;">
+<div id="img_box_5"><img  src="img/tatlı1.jpg" class="card-img-top" alt="tatlı"></div>
+<div class="card-body-filtre">
+<div class='titlee' id="p-name-100">  <h5 class="card_title100"> San Sebastian</h5></div>
+<p class="card-text-filter" id="p-content-5">1 krem peynir. <br>
+3/4su şeker. <br>
+2 yumurta <br>
+1/2su bardağı süt(100 ml) <br>
+1 paket krema<br>
+karamel sos <br>
+isteğe göre meyve <br>
+tatlı yapılışı için video izleyebilirsiniz.   
+
+</p>
+<button class="btn btn-primary tarifeGit"> <a class='linkCss' href=${link}>tarife git</a></button>
+<button name="5" class='btn btn-primary tarifEkle' onclick=""> <a >favori</a> </button>    
+</div>
+</div>
+<div class="cardFiltre" style="width: 22rem;">
+<div id="img_box_6"><img  src="img/tatlı2.jpg" class="card-img-top" alt="tatlı"></div>
+<div class="card-body-filtre">
+<div class='titlee' id="p-name-6">  <h5 class="card_title6">Yaş Pasta</h5></div>
+<p class="card-text-filter" id="p-content-101"> 1 paket krem şanti <br>
+İstenilen meyve <br>
+3 bardak un <br>
+2 yemek kaşığı sıvı yağ <br>
+2 su bardağı şeker<br>
+1 paket kabartma tozu <br>
+2 paket vanilya.<br>
+3 yumurta <br>
+çikolata sos <br>
+tatlı yapılışı için video izleyebilirsiniz.   
+
+</p>
+<button class="btn btn-primary tarifeGit"> <a class='linkCss' href=${link}>tarife git</a></button>
+<button name="6" class='btn btn-primary tarifEkle' onclick=""> <a >favori</a> </button>    
+</div>
+</div>
+<div class="cardFiltre" style="width: 22rem;">
+<div id="img_box_7"><img  src="img/tatlı3.jpg" class="card-img-top" alt="tatlı"></div>
+<div class="card-body-filtre">
+<div class='titlee' id="p-name-7">  <h5 class="card_title7">Mangnolia</h5></div>
+<p class="card-text-filter" id="p-content-7"> Yarım bardak şeker. <br>
+2 bardak un.<br>
+istenilen meyve. <br>
+2 yemek kaşığı tereyağ yağ <br>
+2 paket vanilin. <br>
+1 paket krem şanti<br>
+2 yumurta<br>
+Meyve sosu
+Taban için kedi dili. <br>
+tatlı yapılışı için video izleyebilirsiniz.   
+
+</p>
+<button class="btn btn-primary tarifeGit"> <a class='linkCss' href=${link}>tarife git</a></button>
+
+<button name="7" class='btn btn-primary tarifEkle' onclick=""> <a >favori</a> </button>    
+</div>
+</div>
+<div class="cardFiltre" style="width: 22rem;">
+<div id="img_box_8"><img  src="img/tatlı4.jpg" class="card-img-top" alt="tatlı"></div>
+<div class="card-body-filtre" >
+<div class='titlee' id="p-name-8">  <h5 class="card_title8">Cream Burlee</h5></div>
+<p class="card-text-filter" id="p-content-8"> Yarım bardak esemr şeker. <br>
+Krem şanti <br>
+1 bardak toz şeker. <br>
+2 yemek kaşığı sıvı yağ <br>
+7 gr paket vanilya. <br>
+  1 paket süt <br>
+100 gr tereyağ. <br>
+4 yumurta sarısı. <br>
+tatlı yapılışı için video izleyebilirsiniz.   
+</p>
+<button class="btn btn-primary tarifeGit"> <a class='linkCss' href=${link}>tarife git</a></button>
+
+<button name="8" class='btn btn-primary tarifEkle' onclick=""> <a >favori</a> </button>    
+</div>
+</div>
+
+
+<div class="cardFiltre" style="width: 22rem;">
+<div id="img_box_9"><img  src="img/anayemek1.jpg" class="card-img-top" alt="ana yemek"></div>
+<div class="card-body-filtre" >
+<div class='titlee' id="p-name-9">  <h5 class="card_title9">Mantar Sote</h5></div>
+<p class="card-text-filter" id="p-content-9">
+2 paket mantar (1 kg) <br> 
+2 adet kuru soğan. <br>
+4-5 adet çarliston biber. <br>
+1 diş sarımsak. <br>
+2 adet domates.  <br>
+        1 yemek kaşığı tereyağı <br>
+ Yarım çay bardağı kadar sıvı yağ  <br>
+   Tuz, karabiber ve pul biber. <br>
+   ana yemek yapılışı için vide izleyebilirsiniz..
+</p>
+<button class="btn btn-primary tarifeGit"> <a class='linkCss' href=${link}>tarife git</a></button>
+<button name="9" class='btn btn-primary tarifEkle' onclick=""> <a >favori</a> </button>    
+</div>
+</div>
+<div class="cardFiltre" style="width: 22rem;">
+<div id="img_box_10"><img  src="img/anayemek2.jpg" class="card-img-top" alt="ana yemek"></div>
+<div class="card-body-filtre" >
+<div class='titlee' id="p-name-10">  <h5 class="card_title10">Kremalı Somon</h5></div>
+<p class="card-text-filter" id="p-content-10">1 kilo dilimlenmiş somon <br>
+Zeytinyağ <br>
+2 yemek kaşığı tereyağı <br>
+1 yemek kaşığı un <br>
+1 paket krema <br>
+3 diş sarımsak <br>
+Dereotu <br>
+Az karabiber <br>
+ana yemek yapılışı için vide izleyebilirsiniz..
+
+</p>
+<button class="btn btn-primary tarifeGit"> <a class='linkCss' href=${link}>tarife git</a></button>
+
+<button name="10" class='btn btn-primary tarifEkle' onclick=""> <a >favori</a> </button>    
+</div>
+</div>
+<div class="cardFiltre" style="width: 22rem;">
+<div id="img_box_11"><img  src="img/anayemek3.jpg" class="card-img-top" alt="ana yemek"></div>
+<div class="card-body-filtre" >
+<div class='titlee' id="p-name-11">  <h5 class="card_title11">Latke</h5></div>
+<p class="card-text-filter" id="p-content-11"> 
+3 adet patates(orta boy) <br> 
+(700-800 g) <br>
+1 adet yumurta. <br>
+5 yemek kaşığı (silme) mısır nişastası <br>
+1çay bardağı ayçiçek yağı(kızartmak için) <br>
+ana yemek yapılışı için vide izleyebilirsiniz.. 
+</p>
+<button class="btn btn-primary tarifeGit"> <a class='linkCss' href=${link}>tarife git</a></button>
+
+<button name="11" class='btn btn-primary tarifEkle' onclick=""> <a >favori</a> </button>    
+</div>
+</div>
+<div class="cardFiltre" style="width: 22rem;">
+<div id="img_box_12"><img  src="img/anayemek4.jpg" class="card-img-top" alt="ana yemek"></div>
+<div class="card-body-filtre" >
+<div class='titlee' id="p-name-12">  <h5 class="card_title12">Taco</h5></div>
+<p class="card-text-filter" id="p-content-12"> 
+
+8 taco kabuğu veya küçük yuvarlak lavaş <br>
+1 su bardağı Meksika fasulyesi. <br>
+1/2 (yarım) su bardağı mısır tanesi. <br>
+300 gr kıyma. <br>
+2-3 yemek zeytinyağı <br>
+1 domates. <br>
+4 yaprak kıvırcık. <br>
+1/2 (yarım) kırmızı soğan. <br>
+ana yemek yapılışı için vide izleyebilirsiniz..
+</p>
+<button class="btn btn-primary tarifeGit"> <a class='linkCss' href=${link}>tarife git</a></button>
+<button name="12" class='btn btn-primary tarifEkle' onclick=""> <a >favori</a> </button>    
+</div>
+</div>
+
+</div></div>
+</div></div>
+
+
+
+    <script src="filtre.js"></script>
+</body>
+</html>
